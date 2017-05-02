@@ -1,8 +1,8 @@
 ﻿/*
-Khandker Faim Hussain
-Thurs 12/10/2015
-	Description:		Code from "Survival Shooter" and Assignment 03
-	Revision History:	IDK!!!...
+	Author:			Khandker Faim Hussain
+	Date:			Monday, 01/05/2017
+	Description:	Script is only used for the Canvas GameObject in "MenuScene" 
+					and is used to call scenes when player clicks on the buttong gameobjects
 */
 using System.Collections;
 using System.Collections.Generic;
@@ -19,25 +19,19 @@ public class MenuSceneController : MonoBehaviour
 	public Button btnInfo;
 	public Button btnCheats;
 	public Button btnExit;
-
-
-//	// Use this for initialization
-//	void Start () 
-//	{
-//	}
 	
 	//PUBLIC METHODS - CHANGING SCENES VIA BUTTON CLICKS (Button UI objects will call these methods "OnClick")
-	public void MainLevelScene()
+	public void StartMainLevel()
 	{
 		SceneManager.LoadScene ("MainLevelScene");
 	}
 
-	public void InfoScene()
+	public void GoToInfoScene()
 	{
 		SceneManager.LoadScene ("InfoScene");
 	}
 
-	public void CheatsScene()
+	public void GoToCheatsScene()
 	{
 		SceneManager.LoadScene ("CheatsScene");
 	}
