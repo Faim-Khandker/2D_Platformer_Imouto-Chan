@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 53d8163c0397dec439ee1d202d557bdf
+timeCreated: 1493691203
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ninjutsu BB
+  fontNames:
+  - Ninjutsu BB
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

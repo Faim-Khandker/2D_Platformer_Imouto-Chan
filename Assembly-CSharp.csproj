@@ -46,7 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\_Scripts\UI_Scripts\MenuSceneController.cs" />
+     <None Include="Assets\Fonts\NinjaPenguin\readme.txt" />
+     <None Include="Assets\Fonts\futureTimeSplitter\1001fonts-future-timesplitters-eula.txt" />
+     <None Include="Assets\Fonts\pressStart\license.txt" />
+     <None Include="Assets\Fonts\yoster\license.txt" />
+     <None Include="Assets\Fonts\sevenSwordsman\font info.txt" />
+     <None Include="Assets\Fonts\8bitlim\8bitlimit.txt" />
+     <None Include="Assets\Fonts\manaspace\license.txt" />
+     <None Include="Assets\Fonts\kirby\kirbynokirakizzu.txt" />
+     <None Include="Assets\Fonts\fightingSpiritTurbo\read me.txt" />
+     <None Include="Assets\Fonts\lunchds\license.txt" />
+     <None Include="Assets\Fonts\ninjutsuBB\fontinfo.txt" />
+     <None Include="Assets\Fonts\zeroVelocity\zerovelocity.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
