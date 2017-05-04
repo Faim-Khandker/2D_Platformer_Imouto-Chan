@@ -1,6 +1,6 @@
 ﻿/*
 	Author:			Khandker Faim Hussain
-	Date:			Monday, 01/05/2017
+	Date:			Tues, 02/05/2017
 	Description:	Script is only used for the Canvas GameObject in "MenuScene" 
 					and is used to call scenes when player clicks on the buttong gameobjects
 */
@@ -23,17 +23,17 @@ public class MenuSceneController : MonoBehaviour
 	//PUBLIC METHODS - CHANGING SCENES VIA BUTTON CLICKS (Button UI objects will call these methods "OnClick")
 	public void StartMainLevel()
 	{
-		SceneManager.LoadScene ("MainLevelScene");
+		SceneManager.LoadScene ("Level01_Main_Scene");
 	}
 
 	public void GoToInfoScene()
 	{
-		SceneManager.LoadScene ("InfoScene");
+		SceneManager.LoadScene ("Info_Scene");
 	}
 
 	public void GoToCheatsScene()
 	{
-		SceneManager.LoadScene ("CheatsScene");
+		SceneManager.LoadScene ("Cheats_Scene");
 	}
 
 	public void Exit()

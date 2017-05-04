@@ -1,8 +1,8 @@
 ﻿/*
 	Author:			Khandker Faim Hussain
-	Date:			Monday, 01/05/2017
+	Date:			Tues, 02/05/2017
 	Description:	This script is only used for one method and that is to go back to the "MenuScene". 
-					This script is used for both the "InfoScene" and the "CheatsScene"
+					This script is used in both the "InfoScene" and the "CheatsScene"
 */
 using System.Collections;
 using System.Collections.Generic;
@@ -20,6 +20,6 @@ public class BackToMenuController : MonoBehaviour
 	//PUBLIC METHOD - Goes back to the "MenuScene"
 	public void BackToMenuScene()
 	{
-		SceneManager.LoadScene ("MenuScene");
+		SceneManager.LoadScene ("Menu_Scene");
 	}
 }
