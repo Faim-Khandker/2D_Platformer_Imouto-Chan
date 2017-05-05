@@ -1,6 +1,6 @@
 ﻿/*
 	Author:			Khandker Faim Hussain
-	Date:			Wed, 03/05/2017
+	Date:			Thurs, 04/05/2017
 	Description:	This script is used for giving the player 2D physics for movement. 
 */
 using System.Collections;
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		//GameObject(s) references
+		//Referencing Instances to GameObjects in Unity
 		this._rb2d = gameObject.GetComponent<Rigidbody2D>();
 		this._transform = gameObject.GetComponent<Transform>();
 //		this._anim = gameObject.GetComponent<Animator>();
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 	// Physics Update
 	void FixedUpdate () 
 	{
-		//Represents the "Moving Force" for "Player"
+		//Represents the "Moving Force" for the Player
 		float forceX = 0f;
 		float forceY = 0f;
 
@@ -66,29 +66,36 @@ public class PlayerMovement : MonoBehaviour
 		//NOTE: For more info, check "InputManager" for all keys related to "Horizontal"
 		this._movingValue = Input.GetAxis ("Horizontal");
 
-		//Checks to see if player has changed _movingValue
-		if (_movingValue != 0) {
+		//Checks to see if player has changed "_movingValue"
+		if (_movingValue != 0) 
+		{
 			//Checks to see if player is grounded
-			if (this._isGrounded) {
+			if (this._isGrounded) 
+			{
 				//Setting the animation state
 				//this._anim.SetInteger("AnimState", 1);
 
 				//Checks to see if player is moving right (increasing _movingValue)
-				if (this._movingValue > 0) {
-					//IDK
-					if (absVelX > this.vRange.vMax) {
-						forceX = this.speed;
+				if (this._movingValue > 0) 
+				{
+					//As long as the absolute velocity is in range of "vRange" min and max then call the following
+					if (absVelX < this.vRange.vMax) 
+					{
+						forceX = this.speed; //Gives actual force to move the player to the right
 						this._isFacingRight = true;
-//						this.flip ();
+						this._Flip();
+						Debug.Log("Input is Pressed and value is increasing");
 					}
 				}
 				//Checks to see if player is moving left (decresing _movingValue)
-				if (this._movingValue < 0) {
-					//IDK
-					if (absVelX < this.vRange.vMax) {
-						forceX = this.speed;
+				if (this._movingValue < 0) 
+				{
+					if (absVelX < this.vRange.vMax) 
+					{
+						forceX = -this.speed; //Using the symbol, '-' gives actual force to move the player to the left 
 						this._isFacingRight = false;
-						//this.flip();
+						this._Flip();
+						Debug.Log("Input is Pressed and value is decreasing");
 					}
 				}
 			}
@@ -100,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		//Checks to see if player is jumping
-		if(Input.GetKey("space")) //TRY LOWERCASE IF IT'S NOT WORKING
+		if(Input.GetKey("space"))
 		{
 			//Checks if player is grounded
 			if(this._isGrounded)
@@ -116,10 +123,13 @@ public class PlayerMovement : MonoBehaviour
 		}
 		//Adds a force to the player
 		this._rb2d.AddForce(new Vector2(forceX, forceY));
+
+//		//INSERT DEATH ANIMATION
+//		this._anim.SetInteger("AnimState" 3)
 	}
 
 	//COLLISION METHODS
-	//IDK
+	//Ensures the Player is on the "Platform"
 	void OnCollisionStay2D(Collision2D other)
 	{
 		//Checks if this object is "colliding" with another object's collider (IE. "Platform")

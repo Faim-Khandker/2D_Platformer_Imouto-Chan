@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\UI_Scripts\BackToMenuController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\Player_Scripts\PlayerMovement.cs">
     <Files>
-      <File FileName="Assets\_Scripts\UI_Scripts\MenuSceneController.cs" Line="18" Column="24" />
-      <File FileName="Assets\_Scripts\UI_Scripts\BackToMenuController.cs" Line="5" Column="36" />
+      <File FileName="Assets\_Scripts\UI_Scripts\MenuSceneController.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\UI_Scripts\BackToMenuController.cs" Line="1" Column="1" />
+      <File FileName="Assets\_Scripts\Player_Scripts\PlayerMovement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
